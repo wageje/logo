@@ -1,0 +1,20 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="./css/img.css">
+	<script type="text/javascript" src="./js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+      <h2 class="suppler-h2">已入驻商家</h2>
+      <p class="suppler-p">业内领先卖家</p>
+		<ul class="img-ul" id="ImgUl">
+			<!-- 遍历背景图片地址和title,并设置背景图片样式 Traverse the background image address and title, and set the background image style-->
+			<li v-for='src in src' v-bind:title='src.ImgName' :style='{background: src.url,"background-repeat": backgroundRepeat,"background-position": backgroundPosition,"background-size":backgroundSize}'></li>	
+		</ul>
+	</div>
+	<script type="text/javascript" src="./js/img.js"></script>
+</body>
+</html>
